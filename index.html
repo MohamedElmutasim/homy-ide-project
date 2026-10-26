@@ -3,19 +3,143 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HomyIDE Static App</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>iPhone 18 Pro - Apple</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="card">
-    <div class="badge">Cloudflare Pages Ready</div>
-    <h1>🚀 Hello from HomyIDE!</h1>
-    <p>A pure static web application built and deployed directly from mobile.</p>
-    <div class="counter-box">
-      <span id="counter-value">0</span>
+  <header class="global-nav">
+    <div class="nav-container">
+      <span class="nav-brand">iPhone 18 Pro</span>
+      <nav class="nav-links">
+        <a href="#overview" class="nav-link">Overview</a>
+        <a href="#specs" class="nav-link">Specs</a>
+        <a href="#colors" class="nav-link">Finishes</a>
+        <a href="#buy" class="nav-btn">Pre-order</a>
+      </nav>
     </div>
-    <button id="action-btn">Test JavaScript 🎉</button>
-  </div>
+  </header>
+
+  <main>
+    <section id="overview" class="hero-section">
+      <div class="hero-content">
+        <p class="hero-eyebrow">Titanium and Quantum Glass</p>
+        <h1 class="hero-title">iPhone 18 Pro</h1>
+        <p class="hero-tagline">Pro beyond limits. Powered by A19 Bionic Neural Architecture.</p>
+        <div class="hero-actions">
+          <a href="#buy" class="btn-primary">Buy</a>
+          <a href="#specs" class="btn-secondary">Learn more &gt;</a>
+        </div>
+        <p class="hero-price">From $1,099 or $45.79/mo. for 24 mo.</p>
+      </div>
+
+      <div class="device-showcase">
+        <div class="device-body" id="device-body">
+          <div class="device-notch">
+            <span class="sensor-dot"></span>
+          </div>
+          <div class="screen-glow"></div>
+          <div class="device-display">
+            <div class="display-time" id="clock-display">09:41</div>
+            <div class="display-headline">
+              <span class="display-sub">Next Generation</span>
+              <span class="display-main">Pure Titanium</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="specs" class="specs-section reveal">
+      <div class="section-container">
+        <h2 class="section-heading">Engineered for perfection.</h2>
+        <div class="specs-grid">
+          <div class="spec-card">
+            <span class="spec-badge">Architecture</span>
+            <h3 class="spec-value">A19 Pro</h3>
+            <p class="spec-desc">3nm quantum-fabricated chip with 16-core Neural Engine. Unprecedented computing capability.</p>
+          </div>
+          <div class="spec-card">
+            <span class="spec-badge">Chassis</span>
+            <h3 class="spec-value">Aerospace Titanium</h3>
+            <p class="spec-desc">Precision-machined unibody design. 14 percent lighter with industry-leading tensile resilience.</p>
+          </div>
+          <div class="spec-card">
+            <span class="spec-badge">Optics</span>
+            <h3 class="spec-value">Quad-Prism 10x</h3>
+            <p class="spec-desc">48MP Fusion quad-sensor camera with 10x continuous optical range and cinematic stabilization.</p>
+          </div>
+          <div class="spec-card">
+            <span class="spec-badge">Display</span>
+            <h3 class="spec-value">3,000 Nits</h3>
+            <p class="spec-desc">Super Retina XDR with 1-144Hz adaptive ProMotion. True monochrome blacks with zero blooming.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="colors" class="finish-section reveal">
+      <div class="section-container">
+        <h2 class="section-heading">Choose your finish.</h2>
+        <p class="section-subtitle">Forged in four refined metallic tones.</p>
+        
+        <div class="finish-selector">
+          <button class="color-dot active" data-color="natural" data-name="Natural Titanium" aria-label="Natural Titanium"></button>
+          <button class="color-dot" data-color="black" data-name="Obsidian Black" aria-label="Obsidian Black"></button>
+          <button class="color-dot" data-color="silver" data-name="White Titanium" aria-label="White Titanium"></button>
+          <button class="color-dot" data-color="deep-blue" data-name="Deep Cobalt" aria-label="Deep Cobalt"></button>
+        </div>
+        <p class="finish-name" id="selected-finish-name">Natural Titanium</p>
+      </div>
+    </section>
+
+    <section id="buy" class="pricing-section reveal">
+      <div class="section-container">
+        <h2 class="section-heading">Select capacity.</h2>
+        <div class="storage-selector">
+          <div class="storage-card active" data-storage="256GB" data-price="$1,099">
+            <h4 class="storage-size">256 GB</h4>
+            <span class="storage-note">From $1,099</span>
+          </div>
+          <div class="storage-card" data-storage="512GB" data-price="$1,299">
+            <h4 class="storage-size">512 GB</h4>
+            <span class="storage-note">From $1,299</span>
+          </div>
+          <div class="storage-card" data-storage="1TB" data-price="$1,499">
+            <h4 class="storage-size">1 TB</h4>
+            <span class="storage-note">From $1,499</span>
+          </div>
+          <div class="storage-card" data-storage="2TB" data-price="$1,699">
+            <h4 class="storage-size">2 TB</h4>
+            <span class="storage-note">From $1,699</span>
+          </div>
+        </div>
+
+        <div class="summary-box">
+          <div class="summary-details">
+            <p class="summary-title" id="summary-device">iPhone 18 Pro 256GB - Natural Titanium</p>
+            <p class="summary-price" id="summary-price">$1,099.00</p>
+          </div>
+          <button class="order-btn" id="preorder-btn">Continue to Checkout</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="global-footer">
+    <div class="footer-container">
+      <p class="footer-legal">1. Trade-in values vary based on the condition, year, and configuration of your trade-in device. Minimum purchase amounts apply.</p>
+      <p class="footer-legal">2. ProMotion display technology automatically adapts to refresh rates up to 144Hz.</p>
+      <div class="footer-divider"></div>
+      <div class="footer-bottom">
+        <span>Copyright 2026 Apple Inc. All rights reserved.</span>
+        <div class="footer-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+          <a href="#">Sales Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
 
   <script src="script.js"></script>
 </body>
